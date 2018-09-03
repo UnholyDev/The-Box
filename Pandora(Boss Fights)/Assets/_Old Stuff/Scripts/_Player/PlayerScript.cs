@@ -121,6 +121,12 @@ public class PlayerScript : MonoBehaviour
         {
             hpScript.LoseLives(2);
         }
+
+        if(other.tag == "Slam")
+        {
+            Debug.Log("SLAMMED!");
+            hpScript.LoseLives(2);
+        }
         else if (other.tag == "Stunner")
         {
             hpScript.LoseLives(1);

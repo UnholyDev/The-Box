@@ -8,7 +8,7 @@ public class Stalagtite : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D other)
     {
-        StartCoroutine(WaitThenDestroy(destroyDelay));
+        ObjectPooler.Instance.ReturnObjectToQueue(this.gameObject, "Stalactite");
     }
 
     IEnumerator WaitThenDestroy(float delay)

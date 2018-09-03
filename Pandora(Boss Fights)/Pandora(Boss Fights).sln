@@ -1,7 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2015
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pandora(Boss Fights).CSharp", "Pandora(Boss Fights).CSharp.csproj", "{335473A0-50EC-ED70-AA6A-C7359D617720}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pandora(Boss Fights)", "Pandora(Boss Fights).csproj", "{552273B3-A63F-580C-EB9E-B236272286E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.PackageManagerUI.Editor", "Unity.PackageManagerUI.Editor.csproj", "{6877705C-FBD9-0C4F-5AFB-6FB431E5D39D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityEditor.StandardEvents", "UnityEditor.StandardEvents.csproj", "{6800202F-4402-D405-F8CB-03DC7BD78B92}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +13,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{335473A0-50EC-ED70-AA6A-C7359D617720}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{335473A0-50EC-ED70-AA6A-C7359D617720}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{335473A0-50EC-ED70-AA6A-C7359D617720}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{335473A0-50EC-ED70-AA6A-C7359D617720}.Release|Any CPU.Build.0 = Release|Any CPU
+		{552273B3-A63F-580C-EB9E-B236272286E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{552273B3-A63F-580C-EB9E-B236272286E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{552273B3-A63F-580C-EB9E-B236272286E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{552273B3-A63F-580C-EB9E-B236272286E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6877705C-FBD9-0C4F-5AFB-6FB431E5D39D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6877705C-FBD9-0C4F-5AFB-6FB431E5D39D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6877705C-FBD9-0C4F-5AFB-6FB431E5D39D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6877705C-FBD9-0C4F-5AFB-6FB431E5D39D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6800202F-4402-D405-F8CB-03DC7BD78B92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6800202F-4402-D405-F8CB-03DC7BD78B92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6800202F-4402-D405-F8CB-03DC7BD78B92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6800202F-4402-D405-F8CB-03DC7BD78B92}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
