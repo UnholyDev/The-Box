@@ -21,6 +21,9 @@ public class Wrath : MonoBehaviour
 
     private PatternScript patternScript;
 
+    private string[] speechArray = { "INSOLENT LITTLE BOX!", "YOU DARE ENTER MY DOMAIN?",
+        "I WILL CRUSH YOU", "LIKE THE GNAT YOU ARE!"};
+
     [SerializeField]
     private Transform dragonHead;
 
@@ -36,6 +39,8 @@ public class Wrath : MonoBehaviour
             this.gameObject.AddComponent<PatternScript>();
             patternScript = GetComponent<PatternScript>();
         }
+
+        GUI_Controller.Instance.DisplayTextBox(speechArray);
     }
 
     // Update is called once per frame
@@ -100,8 +105,10 @@ public class Wrath : MonoBehaviour
 
     IEnumerator ShootFireball()
     {
-        GameObject fb = Instantiate(GO_fireball,dragonHead.position,
-            patternScript.TriangulateShotv2(dragonHead.position, PlayerScript.PLAYER_POS, floor_ref.position));
+        //GameObject fb = Instantiate(GO_fireball,dragonHead.position,
+           // patternScript.TriangulateShotv2(dragonHead.position, PlayerScript.PLAYER_POS, floor_ref.position));
+
+        GameObject fb = ObjectPooler.Instance.SpawnFromPool("Fireball", dragonHead.position, patternScript.TriangulateShotv2(dragonHead.position, PlayerScript.PLAYER_POS, floor_ref.position));
         fb.GetComponent<FireballScript>().SetOriginAndTarget(dragonHead.position, PlayerScript.PLAYER_POS);
         Debug.Log("Fireball Fired!");
         yield return new WaitForSeconds(d_fireball);
