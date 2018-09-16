@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 471}
+  m_MinSize: {x: 950, y: 492}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -108,10 +108,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 915, y: 421}
+  m_MinSize: {x: 915, y: 442}
   m_MaxSize: {x: 22010, y: 10021}
   vertical: 0
-  controlID: 175
+  controlID: 131
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -132,10 +132,10 @@ MonoBehaviour:
     y: 0
     width: 1205
     height: 947
-  m_MinSize: {x: 202, y: 421}
-  m_MaxSize: {x: 4002, y: 8021}
+  m_MinSize: {x: 202, y: 442}
+  m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 14
+  controlID: 53
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -498,20 +498,20 @@ MonoBehaviour:
   m_IgnoreNextPostprocessEvent: 0
   m_SelectedAssetPath: Assets/New Stuff/Art/Wrath-Slam_00000.png
   m_Selected:
-    m_Name: Wrath-Slam_00000
+    m_Name: 
     m_OriginalName: 
-    m_Pivot: {x: 0.5, y: 0.5}
+    m_Pivot: {x: 0, y: 0}
     m_Alignment: 0
     m_Border: {x: 0, y: 0, z: 0, w: 0}
     m_Rect:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 3500
-      height: 2500
+      width: 0
+      height: 0
     m_Outline: []
     m_PhysicsShape: []
-    m_TessellationDetail: -1
+    m_TessellationDetail: 0
 --- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -681,9 +681,9 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 9a290000
-    m_LastClickedID: 10650
-    m_ExpandedIDs: 9efbffff000000009a290000
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: 9efbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -771,19 +771,18 @@ MonoBehaviour:
     m_ScenePaths: []
     m_ShowAllHits: 0
     m_SearchArea: 0
-    m_Folders:
-    - Assets/New Stuff/Wrath
+    m_Folders: []
   m_ViewMode: 0
   m_StartGridSize: 16
   m_LastFolders: []
   m_LastFoldersGridSize: 16
-  m_LastProjectPath: C:\Users\Ryan\Documents\unityrepository\Pandora(Boss Fights)
+  m_LastProjectPath: C:\Users\Ryan\Documents\The-Box\Pandora(Boss Fights)
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: cc250000
     m_LastClickedID: 9676
-    m_ExpandedIDs: 0000000082270000a6270000ca270000e8270000f22700000e2800001028000020280000302800006c280000bc280000e2280000f628000004290000122900001c2900002e290000342900003c2900003e290000442900005429000060290000242b0000262b0000282b0000
+    m_ExpandedIDs: 0000000080270000a4270000c8270000e6270000f02700000c2800000e2800001e2800002e2800006a280000ba280000e0280000f428000002290000102900001a2900002c290000322900003a2900003c29000042290000522900005e2900002a2b00002c2b00002e2b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -811,7 +810,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000082270000a6270000ca270000e8270000f22700000e2800001028000020280000302800006c280000bc280000e2280000f628000004290000122900001c2900002e290000342900003c2900003e290000442900005429000060290000242b0000262b0000282b0000
+    m_ExpandedIDs: 0000000080270000a4270000c8270000e6270000f02700000c2800000e2800001e2800002e2800006a280000ba280000e0280000f428000002290000102900001a2900002c290000322900003a2900003c29000042290000522900005e2900002a2b00002c2b00002e2b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1012,7 +1011,7 @@ MonoBehaviour:
     width: 275
     height: 926
   m_PersistentViewDataDictionary: {fileID: 0}
-  m_ScrollPosition: {x: 0, y: 15.955078}
+  m_ScrollPosition: {x: 0, y: 0}
   m_InspectorMode: 0
   m_PreviewResizer:
     m_CachedPref: 331
