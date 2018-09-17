@@ -307,6 +307,7 @@
     <Compile Include="Assets\_Old Stuff\Scripts\Wrath\FireballScript.cs" />
     <Compile Include="Assets\_Old Stuff\Scripts\Wrath\PatternScript.cs" />
     <Compile Include="Assets\_Old Stuff\Scripts\Wrath\Stalagtite.cs" />
+    <Compile Include="Assets\New Stuff\Scripts\GUI_Controller.cs" />
     <Compile Include="Assets\New Stuff\Wrath\Wrath.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />

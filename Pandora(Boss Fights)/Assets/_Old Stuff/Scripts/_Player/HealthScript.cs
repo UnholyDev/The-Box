@@ -41,6 +41,11 @@ public class HealthScript : MonoBehaviour {
         //Returns index out of range if hit with fireball at 1 life
         for (int i = 0; i < n; i++)
         {
+            if(currentLives - 1 < 0)
+            {
+                CheckIfGameOver();
+                break;
+            }
             Destroy(lifeArray[currentLives - 1]);
             lifeArray[currentLives - 1] = null;
             //livesList.RemoveAt(livesList.Count);

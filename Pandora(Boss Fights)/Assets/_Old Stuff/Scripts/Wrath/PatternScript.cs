@@ -15,14 +15,21 @@ public class PatternScript : MonoBehaviour {
      * 
      */
 
+    private bool _interrupt;
+
     void Awake()
     {
-
+        _interrupt = false;
     }
 
     void Start()
     {
 
+    }
+
+    public void Interrupt()
+    {
+        _interrupt = !_interrupt;
     }
 
     public void TriangulateShot(Vector2 startPoint, Vector2 endPoint, Vector2 floor, GameObject fireball)
@@ -50,13 +57,29 @@ public class PatternScript : MonoBehaviour {
         return Quaternion.Euler(0, 0, angle + 180);
     }
 
+    public IEnumerator InjuredPattern(Transform leftLimit, Transform rightLimit, Animator anim)
+    {
+        int x = 0;
+
+        while(x < 10)
+        {
+            yield return new WaitForSeconds(0.75f);
+            anim.SetTrigger("slam");
+            Vector2 pos = new Vector2(Random.Range(leftLimit.position.x, rightLimit.position.x), leftLimit.position.y);
+
+            GameObject spike = ObjectPooler.Instance.SpawnFromPool("Stalactite", pos, Quaternion.Euler(Vector3.zero));
+
+            x++;
+        }
+    }
+
     public IEnumerator StrafePattern(Vector2 starting_point, Vector2 floor, GameObject[] fireball_pool)
     {
         while(true)
         {
             yield return new WaitForSeconds(1);
 
-            float secondVolleOffset = 4.05f / 2;
+            float secondVolleyOffset = 4.05f / 2;
 
             for (int n = 0; n < 5; n++)
             {
@@ -73,18 +96,7 @@ public class PatternScript : MonoBehaviour {
                     fbSpawned.OnObjectSpawned(starting_point, target);
                 }
 
-                //Debug.Log(target);
-
-                /*if (fscript == null)
-                {
-                    Debug.LogError("Missing fireball script!");
-                }*/
-
-                //fscript.SetOriginAndTarget(starting_point, target);
-                //TriangulateShot(starting_point, target, floor, fireball_pool[n]);
-
-
-                yield return new WaitForSeconds(0.25f);
+                yield return new WaitForSeconds(0.5f);
             }
 
             yield return new WaitForSeconds(1);
@@ -93,7 +105,7 @@ public class PatternScript : MonoBehaviour {
             {
                 //floor.x + (1.35*(num+1)) variation for 
 
-                Vector2 target = new Vector2(floor.x + (4.05f * (n - 4) + secondVolleOffset), floor.y);
+                Vector2 target = new Vector2(floor.x + (4.05f * (n - 4) + secondVolleyOffset), floor.y);
 
                 GameObject fireball = ObjectPooler.Instance.SpawnFromPool("Fireball", starting_point, TriangulateShotv2(starting_point, target, floor));
 
